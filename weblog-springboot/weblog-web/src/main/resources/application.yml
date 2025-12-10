@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    # Set the active profile to 'dev'
+    active: dev
+#    active: prod
