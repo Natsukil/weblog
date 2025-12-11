@@ -5,8 +5,14 @@ import './style.css'
 // 导入路由
 import router from '@/router'
 
+
 import App from '@/App.vue'
 
-createApp(App)
-    .use(router)
-    .mount('#app')
+const app = createApp(App)
+
+import { setupIcons } from './plugins/icons'
+setupIcons(app)
+
+
+app.use(router)
+app.mount('#app')
